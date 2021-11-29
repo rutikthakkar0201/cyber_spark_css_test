@@ -1,0 +1,108 @@
+body {
+    color: #000000;
+    font-family: Sans-Serif;
+    padding: 30px;
+    background-color: #f6f6f6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  a:hover {
+    color: #222222
+  }
+  
+  /* Dropdown */
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    margin-right: 44px;
+  }
+  
+  .dropdown-button {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px 30px 10px 20px;
+    background-color: #00abe7;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 135px;
+    border:none;
+    border-radius:22px;
+
+  }
+  
+  .dropdown-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+  }
+  .dropdown-input {
+    display: none;
+  }
+  
+  .dropdown-hover :hover{
+   background-color: #7fd5f3;
+  }
+ 
+  .dropdown-focus :focus{
+    border: 1px solid  #0070B4;
+   }
+  .dropdown-active :active{
+    background-color: #0070B4;
+   }
+  .dropdown-disable{
+    pointer-events: none;
+    opacity: 0.4;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+  }
+  
+  .dropdown-input + .dropdown-menu {
+    display: none;
+  } 
+  
+  .dropdown-input:checked + .dropdown-menu {
+    display: block;
+  } 
+  
+  .dropdown-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f6f6f6;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+  }
+  
+  .dropdown-menu li.divider{
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+  }
